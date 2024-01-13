@@ -1,8 +1,8 @@
-import { Header } from "@/app/ui/(components)/header/header";
-import { Footer } from "@/app/ui/(components)/footer/footer";
+import { Header } from '@/app/ui/(components)/header/header';
+import { Footer } from '@/app/ui/(components)/footer/footer';
 
 export const metadata = {
-  title: "Home Page",
+  title: 'Home Page',
 };
 
 export default function Page() {

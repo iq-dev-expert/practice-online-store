@@ -1,8 +1,8 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export function NavBar() {
   return (
-    <ul className="container bg-orange-200 flex justify-between">
+    <ul className="container flex justify-between bg-orange-200">
       <li>
         <Link href="/catalog">catalog</Link>
       </li>

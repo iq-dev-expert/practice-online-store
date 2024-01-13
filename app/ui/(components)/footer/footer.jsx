@@ -1,4 +1,4 @@
-import { Logo } from "@/app/ui/(components)/logo";
+import { Logo } from '@/app/ui/(components)/logo';
 
 export function Footer() {
   return (

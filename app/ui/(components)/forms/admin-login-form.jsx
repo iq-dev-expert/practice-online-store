@@ -1,4 +1,4 @@
-import { Button } from "@/app/ui/(components)/buttons/admin-in-out-button";
+import { Button } from '@/app/ui/(components)/buttons/admin-in-out-button';
 
 export function AdminLoginForm() {
   return (

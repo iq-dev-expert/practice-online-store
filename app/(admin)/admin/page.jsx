@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import { useEffect, useState } from "react";
-import { redirect } from "next/navigation";
+import { useEffect, useState } from 'react';
+import { redirect } from 'next/navigation';
 
-import { Button } from "@/app/ui/(components)/buttons/admin-in-out-button";
+import { Button } from '@/app/ui/(components)/buttons/admin-in-out-button';
 
 //Depending on whether the admin is logged in, we let him into the admin panel or redirect to loginPage
 const adminIsLogedIn = false;
@@ -13,7 +13,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!loginAdmin) {
-      redirect("/admin/login");
+      redirect('/admin/login');
     }
   }, [loginAdmin]);
 
