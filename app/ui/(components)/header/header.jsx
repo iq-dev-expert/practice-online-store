@@ -12,8 +12,8 @@ export function Header() {
         <Logo />
         <Search />
         <ContactInfo />
-        <NavBar />
       </div>
+      <NavBar />
     </header>
   );
 }
