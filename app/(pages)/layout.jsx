@@ -1,17 +1,11 @@
 import { Header } from "@/app/ui/(components)/header/header";
 import { Footer } from "@/app/ui/(components)/footer/footer";
 
-export const metadata = {
-  title: "Home Page",
-};
-
-export default function Page() {
+export default function PagesLayout({ children }) {
   return (
     <>
       <Header />
-      <main>
-        <h1>Home Page</h1>
-      </main>
+      <main>{children}</main>
       <Footer />
     </>
   );
