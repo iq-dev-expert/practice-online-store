@@ -1,5 +1,5 @@
-import { Header } from '@/app/ui/(components)/header/header';
-import { Footer } from '@/app/ui/(components)/footer/footer';
+import { Header } from '@/app/ui/(components)/header';
+import { Footer } from '@/app/ui/(components)/footer';
 
 export default function PagesLayout({ children }) {
   return (
