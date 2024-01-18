@@ -1,23 +1,23 @@
 import Link from 'next/link';
 
+const links = [
+  { name: 'catalog', href: '/catalog' },
+  { name: 'novelty', href: '/novelty' },
+  { name: 'discounts', href: '/discounts' },
+  { name: 'best sellers', href: '/best-sellers' },
+  { name: 'about us', href: '/about-us' },
+];
+
 export function NavBar() {
   return (
-    <ul className="container flex justify-between bg-orange-200">
-      <li>
-        <Link href="/catalog">catalog</Link>
-      </li>
-      <li>
-        <Link href="/novelty">novelty</Link>
-      </li>
-      <li>
-        <Link href="/discounts">discounts</Link>
-      </li>
-      <li>
-        <Link href="/best-sellers">best sellers</Link>
-      </li>
-      <li>
-        <Link href="/about-us">about us</Link>
-      </li>
-    </ul>
+    <nav>
+      <ul className="container flex justify-between bg-orange-200">
+        {links.map((link, idx) => (
+          <li key={idx}>
+            <Link href={link.href}>{link.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
