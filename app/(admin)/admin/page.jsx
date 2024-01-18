@@ -17,7 +17,7 @@ export default function Page() {
 
   return (
     <>
-      <h1>Admin Panel</h1>
+      <h1 className="text-5xl font-black">Admin Panel</h1>
 
       <Button buttonType="button" buttonText="Sign out" />
     </>

@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <Header />
       <main>
-        <h1>Home Page</h1>
+        <h1 className="text-5xl font-black">Home Page</h1>
       </main>
       <Footer />
     </>

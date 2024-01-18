@@ -3,5 +3,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <h1>Catalog Page</h1>;
+  return <h1 className="text-5xl font-black">Catalog Page</h1>;
 }

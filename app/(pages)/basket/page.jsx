@@ -3,5 +3,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return <h1>Basket Page</h1>;
+  return <h1 className="text-5xl font-black">Basket Page</h1>;
 }

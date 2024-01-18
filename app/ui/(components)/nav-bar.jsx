@@ -12,11 +12,15 @@ export function NavBar() {
   return (
     <nav>
       <ul className="container flex justify-between bg-orange-200">
-        {links.map((link, idx) => (
-          <li key={idx}>
-            <Link href={link.href}>{link.name}</Link>
-          </li>
-        ))}
+        {links.map((link, idx) => {
+          const { name, href } = link;
+
+          return (
+            <li key={idx}>
+              <Link href={href}>{name}</Link>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );
