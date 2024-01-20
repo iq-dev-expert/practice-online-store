@@ -4,11 +4,5 @@ export const metadata = {
 };
 
 export default function HomePage() {
-  return (
-    <>
-      <main>
-        <h1 className="text-5xl font-black">Home Page</h1>
-      </main>
-    </>
-  );
+  return <h1 className="text-5xl font-black">Home Page</h1>;
 }

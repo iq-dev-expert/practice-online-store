@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const links = [
   { name: 'catalog', href: '/catalog' },
@@ -9,15 +12,20 @@ const links = [
 ];
 
 export function NavBar() {
+  const pathname = usePathname();
+
   return (
     <nav>
       <ul className="container flex justify-between bg-orange-200">
         {links.map((link, idx) => {
           const { name, href } = link;
+          const isActive = pathname.startsWith(href);
 
           return (
             <li key={idx}>
-              <Link href={href}>{name}</Link>
+              <Link href={href} className={isActive ? 'text-teal-500' : ''}>
+                {name}
+              </Link>
             </li>
           );
         })}
