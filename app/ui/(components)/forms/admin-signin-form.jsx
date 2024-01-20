@@ -2,7 +2,7 @@ import { Button } from '@/app/ui/(components)/buttons/admin-in-out-button';
 
 const fields = [{ value: 'email' }, { value: 'password' }];
 
-export function AdminLoginForm() {
+export function AdminSigninForm() {
   return (
     <form>
       <ul>

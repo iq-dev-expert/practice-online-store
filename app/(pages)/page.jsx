@@ -3,7 +3,7 @@ export const metadata = {
   description: 'This is Home Page',
 };
 
-export default function Page() {
+export default function HomePage() {
   return (
     <>
       <main>

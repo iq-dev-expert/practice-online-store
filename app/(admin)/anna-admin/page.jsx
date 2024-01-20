@@ -6,13 +6,13 @@ import { redirect } from 'next/navigation';
 import { Button } from '@/app/ui/(components)/buttons/admin-in-out-button';
 
 //Depending on whether the admin is logged in, we let him into the admin panel or redirect to loginPage
-const adminIsLogedIn = true;
+const adminIsLogedIn = false;
 
-export default function Page() {
+export default function AdminPanelPage() {
   const [loginAdmin, setLoginAdmin] = useState(adminIsLogedIn);
 
   if (!loginAdmin) {
-    redirect('/admin/login');
+    redirect('/anna-admin/login');
   }
 
   return (
