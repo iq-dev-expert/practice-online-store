@@ -12,7 +12,7 @@ export default function AdminPanelPage() {
   const [loginAdmin, setLoginAdmin] = useState(adminIsLogedIn);
 
   if (!loginAdmin) {
-    redirect('/anna-admin/login');
+    redirect('/anna-admin/sign-in');
   }
 
   return (
