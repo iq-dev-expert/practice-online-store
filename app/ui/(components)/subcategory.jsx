@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function SubCategoryComponent() {
+export function SubCategory() {
   return (
     <ul className="pl-2.5">
       <li>

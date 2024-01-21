@@ -1,15 +1,15 @@
 import Link from 'next/link';
-import { SubCategoryComponent } from './subcategory';
+import { SubCategory } from './subcategory';
 
-export function CategoryComponent() {
+export function Category() {
   return (
     <ul className="pl-2.5">
       <li>
         <Link href="/catalog/category-1">Category1</Link>
-        <SubCategoryComponent />
+        <SubCategory />
       </li>
       <li>Category2</li>
-      <SubCategoryComponent />
+      <SubCategory />
       <li>Category3</li>
     </ul>
   );
